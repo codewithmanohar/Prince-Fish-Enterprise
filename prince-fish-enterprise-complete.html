@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prince Fish Enterprise</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script defer>
+    function toggleMenu() {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    }
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #home {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url(https://c8.alamy.com/comp/2RF188H/different-types-of-bangladeshi-fish-including-carp-and-tilapia-in-a-local-fish-market-in-khulna-bnagladesh-2RF188H.jpg);
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-900">Prince Fish Enterprise</h1>
+      <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <a href="#home" class="hover:text-blue-900">Home</a>
+        <a href="#why" class="hover:text-blue-900">Why Us</a>
+        <a href="#products" class="hover:text-blue-900">Fish Types</a>
+        <a href="#testimonials" class="hover:text-blue-900">Testimonials</a>
+        <a href="#about" class="hover:text-blue-900">About</a>
+        <a href="#contact" class="hover:text-blue-900">Contact</a>
+      </nav>
+      <button onclick="toggleMenu()" class="md:hidden focus:outline-none text-blue-900">☰</button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#home" class="block py-2 text-gray-700 hover:text-blue-900">Home</a>
+      <a href="#why" class="block py-2 text-gray-700 hover:text-blue-900">Why Us</a>
+      <a href="#products" class="block py-2 text-gray-700 hover:text-blue-900">Fish Types</a>
+      <a href="#testimonials" class="block py-2 text-gray-700 hover:text-blue-900">Testimonials</a>
+      <a href="#about" class="block py-2 text-gray-700 hover:text-blue-900">About</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-900">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center py-24 px-4">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Fresh Fish. Fair Price. Bulk Supply.</h2>
+    <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">Your trusted wholesale fish supplier for restaurants, markets, and seafood vendors.</p>
+    <a href="#contact" class="bg-white text-blue-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition">Get in Touch</a>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why" class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-blue-900 text-center mb-10">Why Choose Us</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-4xl text-blue-900 mb-2">🐟</div>
+          <h3 class="font-semibold text-lg">Fresh & Clean Fish</h3>
+          <p class="text-gray-600 mt-2 text-sm">All fish are sourced daily and maintained with proper hygiene.</p>
+        </div>
+        <div>
+          <div class="text-4xl text-blue-900 mb-2">💰</div>
+          <h3 class="font-semibold text-lg">Affordable Pricing</h3>
+          <p class="text-gray-600 mt-2 text-sm">We offer wholesale rates perfect for businesses and resellers.</p>
+        </div>
+        <div>
+          <div class="text-4xl text-blue-900 mb-2">🚚</div>
+          <h3 class="font-semibold text-lg">Reliable Delivery</h3>
+          <p class="text-gray-600 mt-2 text-sm">Timely and secure delivery across your location, hassle-free.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fish Types -->
+  <section id="products" class="bg-gray-100 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-blue-900 mb-8">Fish Varieties</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-5 shadow rounded-lg hover:shadow-lg transition">
+          <img src="https://img.myloview.com/posters/pile-of-fresh-rohu-fish-arranged-in-row-for-sale-in-indian-fish-market-700-265749481.jpg" alt="Rohu Fish" class="rounded mb-4 w-full h-48 object-cover">
+          <h3 class="text-xl font-semibold text-blue-900 mb-1">Rohu</h3>
+          <p class="text-sm text-gray-600">Popular freshwater fish ideal for bulk selling to local stores and hotels.</p>
+        </div>
+        <div class="bg-white p-5 shadow rounded-lg hover:shadow-lg transition">
+          <img src="https://2.wlimg.com/product_images/bc-full/2025/3/14310659/watermark/live-catla-fish-1739776908-7870539.jpeg" alt="Katla Fish" class="rounded mb-4 w-full h-48 object-cover">
+          <h3 class="text-xl font-semibold text-blue-900 mb-1">Katla</h3>
+          <p class="text-sm text-gray-600">Cleaned & fresh Katla available in multiple sizes. Bulk orders welcomed.</p>
+        </div>
+        <div class="bg-white p-5 shadow rounded-lg hover:shadow-lg transition">
+          <img src="https://udupifresh.com/cdn/shop/products/WhitePrawns-Medium_Unpeeled_8_b91e3bfa-d393-4528-ad77-9d065352efc5.jpg?v=1597239569" alt="Prawns" class="rounded mb-4 w-full h-48 object-cover">
+          <h3 class="text-xl font-semibold text-blue-900 mb-1">Prawns</h3>
+          <p class="text-sm text-gray-600">High-quality prawns for restaurants and seafood suppliers in bulk.</p>
+        </div>
+      </div>
+    </div>
+  </section>

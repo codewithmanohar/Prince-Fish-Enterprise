@@ -1,0 +1,25 @@
+.primary-btn {
+  margin: 15px 0;
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #178f7d; /* teal green */
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.primary-btn:hover {
+  background-color: #127567; /* darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .know-more-btn {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+}

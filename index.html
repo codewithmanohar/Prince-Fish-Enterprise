@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prince Fish Enterprise</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="button.css">
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- navbar
+    <nav class="navbar">
+    <div class="logo">
+      <img src="./img/logo.png" alt="Prince Fish Enterprise">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li class="dropdown">
+        <a href="#">Fish List ▾</a>
+        <div class="dropdown-content">
+          <a href="#">Freshwater</a>
+          <a href="#">Saltwater</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Scampi Prawns ▾</a>
+        <div class="dropdown-content">
+          <a href="#">Small</a>
+          <a href="#">Large</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Crabs ▾</a>
+        <div class="dropdown-content">
+          <a href="#">Soft Shell</a>
+          <a href="#">Hard Shell</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Fish Cuts ▾</a>
+        <div class="dropdown-content">
+          <a href="#">Fillet</a>
+          <a href="#">Whole</a>
+        </div>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </nav> -->
+
+   <!-- Navbar -->
+  <nav class="navbar">
+  <div class="logo">
+    <img src="./img/logo.png" alt="Prince Fish Enterprise">
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+
+    <li class="dropdown">
+      <a href="#" onclick="toggleDropdown(event, 0)">Fish List ▾</a>
+      <div class="dropdown-content">
+        <a href="#">Freshwater</a>
+        <a href="#">Saltwater</a>
+      </div>
+    </li>
+
+    <li class="dropdown">
+      <a href="#" onclick="toggleDropdown(event, 1)">Scampi Prawns ▾</a>
+      <div class="dropdown-content">
+        <a href="#">Small</a>
+        <a href="#">Large</a>
+      </div>
+    </li>
+
+    <li class="dropdown">
+      <a href="#" onclick="toggleDropdown(event, 2)">Crabs ▾</a>
+      <div class="dropdown-content">
+        <a href="#">Soft Shell</a>
+        <a href="#">Hard Shell</a>
+      </div>
+    </li>
+
+    <li class="dropdown">
+      <a href="#" onclick="toggleDropdown(event, 3)">Fish Cuts ▾</a>
+      <div class="dropdown-content">
+        <a href="#">Fillet</a>
+        <a href="#">Whole</a>
+      </div>
+    </li>
+
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+
+   <!-- heading section  -->
+   <section class="hero-section">
+
+  <!-- slider -->
+  <div class="slider-container">
+  <div class="slider-track">
+    <img src="https://static.vecteezy.com/system/resources/previews/055/475/763/large_2x/mackerel-fish-also-known-internationally-as-rastrelliger-kanagurta-is-also-known-as-indian-mackerel-free-photo.jpg" alt="Image 1" class="slide">
+
+    <img src="https://img.myloview.com/posters/pile-of-fresh-rohu-fish-arranged-in-row-for-sale-in-indian-fish-market-700-265749481.jpg" alt="Image 2" class="slide">
+    
+    <img src="https://www.worldatlas.com/r/w1200/upload/84/9d/2c/thinkstockphotos-622018238.jpg" alt="Image 3" class="slide">
+    
+    <img src="https://worldfishcenter.org/sites/default/files/styles/larger_header/public/images/bg/news/1111.jpg?itok=drAXHf9K" alt="Image 4" class="slide">
+    
+    <img src="https://media.istockphoto.com/id/1410281101/photo/fresh-fish-at-the-fish-market.jpg?s=612x612&w=0&k=20&c=s5cBo2FfgY8URAk6_vBIbCh5wWrCOf2yjnsLo00vLdk=" alt="Image 5" class="slide">
+  </div>
+
+  <!-- Navigation Arrows -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+
+  <!-- Dots -->
+  <div class="slider-dots">
+    <span class="dot active" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+    <span class="dot" data-index="3"></span>
+    <span class="dot" data-index="4"></span>
+  </div>
+  </div>
+
+  <div class="hero-content">
+    <h1>Prince Fish Enterprise</h1>
+    <p>
+      Prince Fish Enterprises is a trusted name in the seafood industry, specializing in the wholesale and distribution of high-quality, fresh and frozen fish, prawns, and seafood across India. Based in [Your Location], we are committed to providing sustainably sourced, hygienically processed, and competitively priced seafood to restaurants, retailers, and bulk buyers.
+      With a focus on quality, reliability, and customer satisfaction, Prince Fish Enterprises deals in a wide range of popular varieties including Rohu, Katla, Bhetki (Seabass), Pomfret, Hilsa (Ilish), Scampi Prawns, Mud Crabs, and many more.
+      Our strong supply chain network ensures timely delivery and consistent freshness, making us a preferred seafood partner for hotels, caterers, and seafood exporters.
+    </p>
+    <a href="#" class="primary-btn">KNOW MORE</a>
+  </div>
+   </section>
+
+<!-- products -->
+   <p class="product-section-title">Fish Varieties</p>
+   <section class="product-list">
+
+   <div class="product-card">
+    <img src="https://kolkatafish.com/wp-content/uploads/2024/07/Bangladesh-ilish.jpg" alt="Hilsa Fish">
+    <h3>Hilsa Fish (Ilish)</h3>
+    <p>Premium Hilsa Fish—ideal for high-end markets, known for its rich flavor and high demand.</p>
+    <a href="#" class="know-more-btn">KNOW MORE</a>
+  </div>
+
+  <div class="product-card">
+    <img src="https://5.imimg.com/data5/RB/LJ/BS/ANDROID-55588578/product-jpeg.jpg" alt="Scampi Prawns">
+    <h3>Scampi Prawns (मीठे पानी झींगा)</h3>
+    <p>We are the supplier, Wholesaler of original quality Fresh Scampi Prawns (मीठे पानी झींगा) online at low prices in India.</p>
+    <a href="#" class="know-more-btn">KNOW MORE</a>
+  </div>
+
+  <div class="product-card">
+    <img src="https://5.imimg.com/data5/SELLER/Default/2024/5/420132059/MF/UC/PW/32351592/asian-seabass-fish-barramundi-as-a-seafood-available-at-reasonable-price.jpg" alt="Fresh Bhetki Fish">
+    <h3>Fresh Bhetki Fish<br>(Seabass) (Barramundi)</h3>
+    <p>We are the supplier, Wholesaler and exporter of original quality Fresh Bhetki (भेटकी) fish online at low prices in India.</p>
+    <a href="#" class="know-more-btn">KNOW MORE</a>
+  </div>
+
+  <div class="product-card">
+    <img src="https://5.imimg.com/data5/AC/GW/WT/SELLER-103648595/white-pomfret-jpg-500x500.jpg" alt="Fresh Pomfret Fish">
+    <h3>Fresh Pomfret Fish</h3>
+    <p>We are the supplier, Wholesaler and exporter of original quality Fresh Pomfret Fish online at low prices in India.</p>
+    <a href="#" class="know-more-btn">KNOW MORE</a>
+  </div>
+
+  <div class="product-card">
+    <img src="https://img.myloview.com/stickers/pile-of-fresh-rohu-fish-arranged-in-row-for-sale-in-indian-fish-market-700-265749478.jpg" alt="Fresh Pomfret Fish">
+    <h3>Fresh Pomfret Fish</h3>
+    <p>We are the supplier, Wholesaler and exporter of original quality Fresh Pomfret Fish online at low prices in India.</p>
+    <a href="#" class="know-more-btn">KNOW MORE</a>
+  </div>
+
+  <div class="product-card">
+    <img src="https://img.myloview.com/stickers/pile-of-fresh-rohu-fish-arranged-in-row-for-sale-in-indian-fish-market-700-265749478.jpg" alt="Fresh Pomfret Fish">
+    <h3>Fresh Pomfret Fish</h3>
+    <p>We are the supplier, Wholesaler and exporter of original quality Fresh Pomfret Fish online at low prices in India.</p>
+    <a href="#" class="know-more-btn">KNOW MORE</a>
+  </div>
+
+  <div class="product-card">
+    <img src="https://img.myloview.com/stickers/pile-of-fresh-rohu-fish-arranged-in-row-for-sale-in-indian-fish-market-700-265749478.jpg" alt="Fresh Pomfret Fish">
+    <h3>Fresh Pomfret Fish</h3>
+    <p>We are the supplier, Wholesaler and exporter of original quality Fresh Pomfret Fish online at low prices in India.</p>
+    <a href="#" class="know-more-btn">KNOW MORE</a>
+  </div>
+
+    <div class="product-card">
+    <img src="https://kj1bcdn.b-cdn.net/media/49324/rohu.jpeg" alt="Scampi Prawns">
+    <h3>Scampi Prawns (मीठे पानी झींगा)</h3>
+    <p>We are the supplier, Wholesaler of original quality Fresh Scampi Prawns (मीठे पानी झींगा) online at low prices in India.</p>
+    <a href="#" class="know-more-btn">KNOW MORE</a>
+  </div>
+
+   <div class="product-card">
+    <img src="https://5.imimg.com/data5/AC/GW/WT/SELLER-103648595/white-pomfret-jpg-500x500.jpg" alt="Fresh Pomfret Fish">
+    <h3>Fresh Pomfret Fish</h3>
+    <p>We are the supplier, Wholesaler and exporter of original quality Fresh Pomfret Fish online at low prices in India.</p>
+    <a href="#" class="know-more-btn">KNOW MORE</a>
+  </div>
+
+  
+   </section>
+
+<section class="why-choose-us">
+  <h2>Why Choose Us</h2>
+  <div class="features">
+    <div class="feature-item">
+      <div class="icon"></div>
+      <img src="./img/Fresh & Clean Fish.png" alt="">
+      <h3>Fresh & Clean Fish</h3>
+      <p>All fish are sourced daily and maintained with proper hygiene.</p>
+    </div>
+    <div class="feature-item">
+      <!-- <div class="icon">💰</div> -->
+       <img src="./img/Affordable Pricing.png" alt="">
+      <h3>Affordable Pricing</h3>
+      <p>We offer wholesale rates perfect for businesses and resellers.</p>
+    </div>
+    <div class="feature-item">
+      <!-- <div class="icon">🚚</div> -->
+       <img src="./img/Sustainably Sourced.png" alt="">
+      <h3>Sustainably Sourced</h3>
+      <p>We source our seafood responsibly, ensuring freshness and future sustainability.</p>
+    </div>
+  </div>
+</section>
+
+<!-- faq section -->
+ <section class="faq-section">
+  <h2>FAQs</h2>
+  <div class="faq-item">
+    <button class="faq-question">Q. Which is the best wholesale fish market in West Bengal?</button>
+    <div class="faq-answer">Prince Fish Enterprises is a reputed name in wholesale seafood supply across West Bengal.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Q. Which is the top wholesale fish market in Kolkata?</button>
+    <div class="faq-answer">You can explore Prince Fish Enterprises’ offerings with daily fresh fish supplies in Kolkata.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Q. How to get Kolkata fish market prices?</button>
+    <div class="faq-answer">Visit our website or contact us on WhatsApp for the latest wholesale price updates.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Q. How to buy fish online in India?</button>
+    <div class="faq-answer">Just browse our fish categories, add to cart, and choose delivery or pickup options.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Q. Which is the best fish buy website?</button>
+    <div class="faq-answer">Prince Fish Enterprises provides a trusted fish buying experience with verified quality.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Q. Which is the best fish marketplace in India?</button>
+    <div class="faq-answer">For bulk orders and affordable rates, Prince Fish Enterprises is a reliable marketplace.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Q. What are the sources of fish, scampi, and crab at Prince Fish Enterprises?</button>
+    <div class="faq-answer">Our seafood is sourced directly from coastal fisheries and trusted farms.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Q. How to take Fish Retail Business Franchise?</button>
+    <div class="faq-answer">Contact us via phone or email to inquire about franchise opportunities and requirements.</div>
+  </div>
+</section>
+
+<!-- footer  -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>We at Prince Fish Enterprises deliver fresh and premium quality seafood.</p>
+      <p>
+        While enjoying fish at a restaurant is effortless, preparing it at home can often be time-consuming and tedious. That’s where we come in. Prince Fish Enterprises brings you top-quality fish and seafood.Visit us and experience the true taste of freshness from ocean to kitchen.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Important Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>More Pages</h3>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Refund/Cancellation Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column contact-info">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> No 1, Sundarar street, Velachery , Bihar 800 073</p>
+      <p><i class="fas fa-phone-alt"></i> +91 9047011110</p>
+      <p><i class="fas fa-envelope"></i> customersupport@PrinceFishEnterprise.com</p>
+      <p><i class="fas fa-clock"></i> Monday – Sunday: 7:00 AM – 9:00 PM</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 All rights Reserved by Prince Fish Enterprises</p>
+  </div>
+</footer>
+
+
+
+
+<!-- Whatsapp -->
+ <a href="https://wa.me/8271199285" class="whatsapp-float" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" />
+</a>
+
+  <!-- <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script> -->
+
+  <!-- toggle menu -->
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+
+  function toggleDropdown(event, index) {
+    if (window.innerWidth <= 768) {
+      event.preventDefault();
+      const dropdowns = document.querySelectorAll(".dropdown-content");
+      dropdowns.forEach((d, i) => {
+        if (i !== index) d.style.display = "none";
+      });
+      const currentDropdown = event.target.nextElementSibling;
+      currentDropdown.style.display =
+        currentDropdown.style.display === "block" ? "none" : "block";
+    }
+  }
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      document.getElementById("navLinks").classList.remove("active");
+      document.querySelectorAll(".dropdown-content").forEach(d => d.style.display = "");
+    }
+  });
+</script>
+
+  <!-- faq javascript -->
+   <script>
+  const questions = document.querySelectorAll('.faq-question');
+
+  questions.forEach(q => {
+    q.addEventListener('click', () => {
+      const answer = q.nextElementSibling;
+      const isActive = q.classList.contains('active');
+
+      // Close all
+      document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+      document.querySelectorAll('.faq-question').forEach(btn => btn.classList.remove('active'));
+
+      // Open clicked one if not already active
+      if (!isActive) {
+        q.classList.add('active');
+        answer.style.display = 'block';
+      }
+    });
+  });
+ </script>
+
+
+  <script src="./slider.js"></script>
+</body>
+</html>
